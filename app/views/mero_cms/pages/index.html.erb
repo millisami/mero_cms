@@ -1,0 +1,21 @@
+<h1>Pages</h1>
+<%= link_to "New Page", new_page_path %>
+<% if @pages.empty? %>
+  There are currently no pages.
+<% else %>
+  <table id="pages">
+    <thead>
+      <tr>
+        <td>Title</td><td>Content</td>
+      </tr>
+    </thead>
+    <tbody>
+    <% @pages.each do |page| %>
+      <tr>
+        <td class="page_title"><%= link_to page.title, page %></td>
+        <td class="page_content"><%= link_to page.content, page %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+<% end %>
