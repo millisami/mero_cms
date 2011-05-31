@@ -1,2 +1,8 @@
 <h1>HomePage#show</h1>
-<div id="mero_cms_chunk_with_default"><%= mero_cms_chunk("About Us") %></div>
+<div id="mero_cms_chunk_with_default">
+  <%= mero_cms_chunk("About Us") %>
+</div>
+
+<div id="mero_cms_chunk_only_content">
+  <%= mero_cms_chunk("About Us", :only_content => true) %>
+</div>
