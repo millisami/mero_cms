@@ -13,4 +13,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "database_cleaner", "~> 0.6.7"
   s.add_development_dependency "valid_attribute", "~> 0.0"
   s.add_development_dependency "mocha", "~> 0.9.12"
+  s.add_development_dependency "generator_spec", "~> 0.8.3"
 end

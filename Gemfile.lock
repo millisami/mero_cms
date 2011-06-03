@@ -67,6 +67,9 @@ GEM
     execjs (1.0.0)
       multi_json (~> 1.0)
     ffi (1.0.9)
+    generator_spec (0.8.3)
+      rails (~> 3.0)
+      rspec-rails
     hike (1.0.0)
     i18n (0.6.0)
     jquery-rails (1.0.7)
@@ -166,6 +169,7 @@ DEPENDENCIES
   coffee-script
   css3buttons
   database_cleaner (~> 0.6.7)
+  generator_spec (~> 0.8.3)
   jquery-rails
   launchy (= 0.3.7)
   mero_cms!
