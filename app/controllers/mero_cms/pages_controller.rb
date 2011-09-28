@@ -2,7 +2,7 @@ module MeroCms
   class PagesController < ApplicationController
     respond_to :html, :json
     
-    # before_filter :authenticate_and_authorize_mero_cms_user!, :except => [:show]
+    before_filter :authenticate_and_authorize_mero_cms_user!, :except => [:show, :index]
     
     def index
       @pages = MeroCms::Page.all
