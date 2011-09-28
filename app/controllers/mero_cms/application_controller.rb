@@ -1,5 +1,5 @@
 module MeroCms
-  class ApplicationController < ::ApplicationController
+  class ApplicationController < ActionController::Base
     
     def current_mero_cms_user
       send(MeroCms::Engine.current_user)
