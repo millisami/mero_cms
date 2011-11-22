@@ -21,6 +21,7 @@ describe "Page" do
     
     it "cannot create a new page" do
       visit new_page_path
+      debugger
       page.current_url.should eql(send(MeroCms::Engine.unauthorized_url))
     end
   end

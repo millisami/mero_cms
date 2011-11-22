@@ -1,3 +1,16 @@
+RSpec.configure do |c|
+  c.before(:each) do
+    
+    ::ApplicationController.class_eval <<-STRING
+      def current_user
+        nil
+      end
+      helper_method :current_user
+    STRING
+    
+  end
+end
+
 def sign_out!
   ApplicationController.class_eval <<-STRING
     def current_user

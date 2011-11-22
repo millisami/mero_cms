@@ -3,6 +3,7 @@ require File.expand_path("../dummy/config/environment.rb", __FILE__)
 require 'rspec/rails'
 require "database_cleaner"
 require 'valid_attribute'
+require 'pry'
 
 Rails.backtrace_cleaner.remove_silencers!
 

@@ -1,8 +1,9 @@
 module MeroCms
-  class ApplicationController < ActionController::Base
+  class ApplicationController < ::ActionController::Base
     
     def current_mero_cms_user
-      send(MeroCms::Engine.current_user)
+      binding.pry
+      send(:current_user)
     end
     
     helper_method :current_mero_cms_user

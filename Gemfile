@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem 'rails', '~> 3.1.0'
+gem 'rails', '3.1.3'
 # gem "rake", "0.8.7"
 
 # Asset template engines
@@ -13,6 +13,8 @@ gem 'css3buttons'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.4'
+  gem 'pry'
+  gem 'pry-doc'
 end
 
 group :test do
